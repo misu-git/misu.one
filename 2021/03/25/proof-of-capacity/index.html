@@ -6,15 +6,15 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Proof of Assignment Consensus | Misu</title>
+  <title>Proof of Capacity Consensus | Misu</title>
   <meta name="author" content="Mihail Nica">
   
-  <meta name="description" content="The Proof of Assignment (PoA) conceptProof of Assignment (PoA)’s operating method enables basic, low-capacity mining operations to be performed using everyday Internet of Things (IoT) applications.">
+  <meta name="description" content="The Proof of Capacity (PoC) conceptProof of capacity (PoC) is a consensus mechanism method used in blockchains that allows mining devices in the network to decide mining rights and validate transactions using their available hard drive space.">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Proof of Assignment Consensus"/>
+  <meta property="og:title" content="Proof of Capacity Consensus"/>
   <meta property="og:site_name" content="Misu"/>
 
   
@@ -104,7 +104,7 @@
 
 	
 		<div class="page-header">
-			<h1> Proof of Assignment Consensus</h1>
+			<h1> Proof of Capacity Consensus</h1>
 		</div>
 	
 
@@ -121,21 +121,28 @@
 	<div class="mypage">		
 	  		
 
-	  <h1 id="The-Proof-of-Assignment-PoA-concept"><a href="#The-Proof-of-Assignment-PoA-concept" class="headerlink" title="The Proof of Assignment (PoA) concept"></a>The Proof of Assignment (PoA) concept</h1><p>Proof of Assignment (PoA)’s operating method enables basic, low-capacity mining operations to be performed using everyday Internet of Things (IoT) applications. </p>
+	  <h1 id="The-Proof-of-Capacity-PoC-concept"><a href="#The-Proof-of-Capacity-PoC-concept" class="headerlink" title="The Proof of Capacity (PoC) concept"></a>The Proof of Capacity (PoC) concept</h1><p>Proof of capacity (PoC) is a consensus mechanism method used in blockchains that allows mining devices in the network to decide mining rights and validate transactions using their available hard drive space.</p>
 <span id="more"></span>
 
-<p>In comparison to its predecessors, Proof of Assignment (PoA) is a cryptographic consensus process that uses less power and can run on relatively low-end hardware.<br>Traditional consensus methods like as <a href="/2021/01/10/proof-of-work/">Proof of Work (PoW)</a> and <a href="/2021/01/15/proof-of-stake/">Proof of Stake (PoS)</a> appear to waste more energy and require significantly more computer power and memory to function, according to PoA. </p>
-<h1 id="What-is-Proof-of-Assignment"><a href="#What-is-Proof-of-Assignment" class="headerlink" title="What is Proof of Assignment?"></a>What is Proof of Assignment?</h1><p>A consensus mechanism is a fault-tolerant technique used in distributed computer networks and blockchain applications to obtain the required agreement on a single data value or network state among decentralized processes or multi-agent systems, such as cryptocurrency.</p>
-<p>It’s also handy for keeping track of and coordinating a group of distributed connected devices, such as with the Internet of Things. </p>
-<p>Major household appliances, such as vacuum cleaners, washing machines, and refrigerators, as well as other commonly used consumer electronics, such as smartwatches and printers, now include advanced microprocessors, microcontrollers, and memory modules capable of connecting to the internet and each other—the IoT’s basic concept.</p>
-<p>It enables these devices to capture, process, and exchange data with other systems and networks in real time. </p>
-<p>IoT-compatible gadgets with integrated computing capacity can be used for bitcoin mining.</p>
-<p>Mining is a computer-based mathematical activity that allows new crypto currencies to be created and blockchain transactions to be verified.</p>
-<p>However, because these devices’ memory and processing power are restricted, their contribution to mining is minimal.</p>
-<p>This type of “lightweight” mining is made possible by the PoA algorithm’s functioning mechanism. </p>
-<h1 id="Benefits"><a href="#Benefits" class="headerlink" title="Benefits"></a>Benefits</h1><p>PoA is said to have a bunch of new advantages.<br>To begin with, household gadgets can be used to contribute to mining, providing a viable answer to the scalability and transaction processing delays that today’s popular cryptocurrency networks suffer.</p>
-<p>Additionally, device owners can set a timetable for when their gadgets contribute to mining when they are idle.</p>
-<p>They may also willingly share or sell the data created and processed by their gadgets in order to earn crypto coins, as this data can be helpful to a wide range of entities involved in market research, consumer patterns research, and city planning. </p>
+<p>This is in contrast to using the processing power of the mining device (as in the proof of work method) or the miner’s cryptocurrency stake (as in the proof of stake algorithm). </p>
+<h1 id="What-is-Proof-of-Burn"><a href="#What-is-Proof-of-Burn" class="headerlink" title="What is Proof of Burn?"></a>What is Proof of Burn?</h1><p>Proof of capacity is one of many alternatives to the problems of high energy consumption in <a href="/2021/01/10/proof-of-work/">Proof of Work (PoW)</a> systems and tokens hoarding in <a href="/2021/01/15/proof-of-stake/">Proof of Stake (PoS)</a> systems. </p>
+<p>Proof of capacity allows mining devices on the blockchain network, also known as nodes, to mine available cryptocurrencies using free space on their hard drives.</p>
+<p>PoC works by storing a list of possible solutions on the mining device’s hard drive even before the mining activity begins, rather than repeatedly changing the numbers in the block header and hashing for the solution value as in a PoW system. </p>
+<p>The more possible solution values a miner can store on his hard drive, the more chances he has to match the required hash value from his list, resulting in a higher chance of winning the mining reward.</p>
+<p>To use an analogy, if lottery prizes are determined by matching the most numbers on the winning ticket, a player with a longer list of potential solutions will have a better chance of winning.</p>
+<p>Furthermore, the player is allowed to use the lottery ticket block numbers over and over again. </p>
+<h1 id="How-Plotting-and-Mining-works"><a href="#How-Plotting-and-Mining-works" class="headerlink" title="How Plotting and Mining works?"></a>How Plotting and Mining works?</h1><p>Plotting and mining are two steps in the proof-of-capacity protocol.</p>
+<p>First, the hard drive is plotted: a list of all potential nonce values is constructed by hashing data, including a miner’s account, over and over again.</p>
+<p>Each nonce is made up of 8192 hashes, numbered from 0 to 8191.</p>
+<p>All of the hashes are coupled into “scoops,” which are groups of two neighboring hashes.</p>
+<p>For example, hash 0 and 1 equals scoop 0, hash 2 and 3 equals hash 1, and so on. </p>
+<p>The second phase is the actual mining, which entails calculating a scoop number by a miner.</p>
+<p>For example, if a miner starts mining and generates scoop number 38, the miner would then go to nonce 1’s scoop number 38 and utilize the data from that scoop to calculate a deadline value.</p>
+<p>For each nonce stored on the miner’s hard drive, the process is repeated to calculate the deadline.</p>
+<p>The miner chooses the one with the shortest deadline after calculating all of the deadlines. </p>
+<p>Before a miner is authorized to produce a new block, a deadline represents the amount of time in seconds that has passed since the last block was forged.</p>
+<p>The miner can fabricate a block and claim the block reward if no one else has done so inside this time frame.</p>
+<p>For example, if miner X sets a minimum deadline of 36 seconds and no other miners can forge the block within that time, X will be guaranteed the opportunity to forge the next block and be rewarded. </p>
 	  
 	</div>
 
@@ -145,13 +152,13 @@
 
     
     
-    <a href="/2021/03/17/namecoin/" type="button" class="btn btn-default"><i
+    <a href="/2021/04/06/unstoppable-domains/" type="button" class="btn btn-default"><i
                 class="fa fa-arrow-circle-o-left"></i> Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2021/03/10/mimblewimble/" type="button" class="btn btn-default ">Next<i
+    <a href="/2021/03/17/namecoin/" type="button" class="btn btn-default ">Next<i
                 class="fa fa-arrow-circle-o-right"></i></a>
     
 
@@ -180,7 +187,7 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2021-03-12 
+	2021-03-25 
 	</div>
 	
 

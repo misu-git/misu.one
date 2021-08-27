@@ -4,9 +4,30 @@
   
     
     <entry>
+      <title>Unstoppable Domains</title>
+      <link href="/2021/04/06/unstoppable-domains/"/>
+      <url>/2021/04/06/unstoppable-domains/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Unstoppable-Domains-principles"><a href="#Unstoppable-Domains-principles" class="headerlink" title="Unstoppable Domains principles"></a>Unstoppable Domains principles</h1><p>NFTs with blockchain domains are the newest addition to the blockchain party.<br>These intriguing assets, which are part URL and part collectible, are quickly becoming the hottest new crypto in town.<br>We’ll go through the fundamentals of blockchain domain NFTs in this introductory essay. </p><span id="more"></span><p>We need to discuss about blockchain domains now that you have a better understanding of non-fungible coins.</p><p>Before we get started, you should understand how domain names function. </p><h1 id="Generics-of-Domain-Names"><a href="#Generics-of-Domain-Names" class="headerlink" title="Generics of Domain Names"></a>Generics of Domain Names</h1><p>As I covered in the <a href="/2021/03/17/namecoin/">Namecoin Post</a>, computers connected to the internet have an IP address. These unique addresses allow individual devices to be identified on networks.</p><p>However, they’re long and hard to remember. For example, misu.one’s IP address is 185.199.108.153. Not particularly memorable, is it?</p><p>Domain names are a more convenient option.</p><p>In your browser’s address field, instead of typing “185.199.108.153”, type “misu.ine” and press enter.</p><p>Your browser detects that the website “misu.one” is hosted at the aforementioned IP address automatically. </p><h1 id="Non-fungible-Tokens-in-the-Blockchain-Domain"><a href="#Non-fungible-Tokens-in-the-Blockchain-Domain" class="headerlink" title="Non-fungible Tokens in the Blockchain Domain"></a>Non-fungible Tokens in the Blockchain Domain</h1><p>Non-fungible tokens are a new addition to the blockchain realm (NFTs).</p><p>They combine the convenience of NFT trading with the customizability of blockchain-based domain names.</p><p>They’ve also experienced a surge in consumer and investment interest in recent months, for a variety of reasons. </p><p>Users can buy blockchain domains and even entire domain namespaces via companies like Unstoppable Domains and protocols like Namecoin.</p><p>Users can later rent or sell specific domain NFTs through the latter. </p><p>Individual “name.crypto” domains can be rented or sold by the owner of “.crypto” domains on a specific blockchain protocol.</p><p>This could be a once-in-a-lifetime chance for early investors.</p><p>Some, such as Mark Cuban, are already anticipating this new, burgeoning industry. </p><blockquote><h2 id="twitter-com-mcuban"><a href="#twitter-com-mcuban" class="headerlink" title="twitter.com/mcuban"></a><a href="https://twitter.com/mcuban/status/1364318842177036292">twitter.com/mcuban</a></h2><p>I dont think that people realize that the real growth in NFTs isn’t now. Art, Music, Photos, Short Videos are the proof of concept and just the beginning.  The real growth comes when corporate IP goes <a href="https://twitter.com/Ip2Nft">@Ip2Nft</a>. That changes revenue streams for ALL companies, large and small</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> project-overview </category>
+          
+          <category> decentralized-domain-name </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Proof of Capacity Consensus</title>
-      <link href="/2021/04/06/proof-of-capacity/"/>
-      <url>/2021/04/06/proof-of-capacity/</url>
+      <link href="/2021/03/25/proof-of-capacity/"/>
+      <url>/2021/03/25/proof-of-capacity/</url>
       
         <content type="html"><![CDATA[<h1 id="The-Proof-of-Capacity-PoC-concept"><a href="#The-Proof-of-Capacity-PoC-concept" class="headerlink" title="The Proof of Capacity (PoC) concept"></a>The Proof of Capacity (PoC) concept</h1><p>Proof of capacity (PoC) is a consensus mechanism method used in blockchains that allows mining devices in the network to decide mining rights and validate transactions using their available hard drive space.</p><span id="more"></span><p>This is in contrast to using the processing power of the mining device (as in the proof of work method) or the miner’s cryptocurrency stake (as in the proof of stake algorithm). </p><h1 id="What-is-Proof-of-Burn"><a href="#What-is-Proof-of-Burn" class="headerlink" title="What is Proof of Burn?"></a>What is Proof of Burn?</h1><p>Proof of capacity is one of many alternatives to the problems of high energy consumption in <a href="/2021/01/10/proof-of-work/">Proof of Work (PoW)</a> systems and tokens hoarding in <a href="/2021/01/15/proof-of-stake/">Proof of Stake (PoS)</a> systems. </p><p>Proof of capacity allows mining devices on the blockchain network, also known as nodes, to mine available cryptocurrencies using free space on their hard drives.</p><p>PoC works by storing a list of possible solutions on the mining device’s hard drive even before the mining activity begins, rather than repeatedly changing the numbers in the block header and hashing for the solution value as in a PoW system. </p><p>The more possible solution values a miner can store on his hard drive, the more chances he has to match the required hash value from his list, resulting in a higher chance of winning the mining reward.</p><p>To use an analogy, if lottery prizes are determined by matching the most numbers on the winning ticket, a player with a longer list of potential solutions will have a better chance of winning.</p><p>Furthermore, the player is allowed to use the lottery ticket block numbers over and over again. </p><h1 id="How-Plotting-and-Mining-works"><a href="#How-Plotting-and-Mining-works" class="headerlink" title="How Plotting and Mining works?"></a>How Plotting and Mining works?</h1><p>Plotting and mining are two steps in the proof-of-capacity protocol.</p><p>First, the hard drive is plotted: a list of all potential nonce values is constructed by hashing data, including a miner’s account, over and over again.</p><p>Each nonce is made up of 8192 hashes, numbered from 0 to 8191.</p><p>All of the hashes are coupled into “scoops,” which are groups of two neighboring hashes.</p><p>For example, hash 0 and 1 equals scoop 0, hash 2 and 3 equals hash 1, and so on. </p><p>The second phase is the actual mining, which entails calculating a scoop number by a miner.</p><p>For example, if a miner starts mining and generates scoop number 38, the miner would then go to nonce 1’s scoop number 38 and utilize the data from that scoop to calculate a deadline value.</p><p>For each nonce stored on the miner’s hard drive, the process is repeated to calculate the deadline.</p><p>The miner chooses the one with the shortest deadline after calculating all of the deadlines. </p><p>Before a miner is authorized to produce a new block, a deadline represents the amount of time in seconds that has passed since the last block was forged.</p><p>The miner can fabricate a block and claim the block reward if no one else has done so inside this time frame.</p><p>For example, if miner X sets a minimum deadline of 36 seconds and no other miners can forge the block within that time, X will be guaranteed the opportunity to forge the next block and be rewarded. </p>]]></content>
       
@@ -16,6 +37,27 @@
           <category> idea </category>
           
           <category> consensus </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Namecoin</title>
+      <link href="/2021/03/17/namecoin/"/>
+      <url>/2021/03/17/namecoin/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Namecoin-origins"><a href="#Namecoin-origins" class="headerlink" title="Namecoin origins"></a>Namecoin origins</h1><p>Namecoin is a cryptocurrency that was created as a derivative of the Bitcoin software.<br>Namecoin is based on the Bitcoin technology, with additional features added on top.<br>Namecoin follows Bitcoin’s proof-of-work (PoW) consensus algorithm.<br>The two currencies are practically equivalent in terms of value. </p><span id="more"></span><p>Namecoin was created with the goal of creating a decentralized domain name system (DNS).<br>The Domain Name System (DNS) converts human-readable domain names (such as <a href="http://www.misu.one/">www.misu.one</a>) to machine-readable IP addresses (for example, 000.0.0.00).<br>DNS is the system that connects domain names to numerical IP addresses all around the world.<br>The goal of decentralizing this system was to eliminate Internet censorship and improve Internet security and privacy.<br>Namecoin is “an experimental open-source solution that increases the decentralization, security, censorship resistance, privacy, and speed of some components of the Internet infrastructure, such as DNS and identities,” according to its creators. </p><h1 id="What-Namecoin-Does"><a href="#What-Namecoin-Does" class="headerlink" title="What Namecoin Does?"></a>What Namecoin Does?</h1><p>Many Namecoin proponents feel that a decentralized DNS system is essential for long-term Internet privacy and censorship reduction.</p><p>While most people are unlikely to need a.bit website or related service, Namecoin could give certain people the tools they need to connect to an Internet free of censorship and central control. </p><p>Despite the fact that we type text-based website addresses into Internet browsers, the Internet is actually built on numerical addresses known as IP addresses.</p><p>The DNS was established to make Internet navigation easier because a large string of numbers is difficult to remember.</p><p>The Domain Name System (DNS) is the Internet’s address book.</p><p>A DNS server is called every time you enter in a website address.</p><p>The DNS server determines the IP address of the Internet destination server before retrieving the data for that web page. </p><p>The top-level domain (.com) is the last part of a website’s domain (TLD).</p><p>A central authority is in charge of all TLDs.</p><p>The Internet Corporation for Assigned Names and Numbers, for example, manages the top-level domain.com (ICANN).</p><p>When a specific complaint about a webpage develops, the TLD’s central authority has final say over how the complaint is resolved.</p><p>Lawyers or copyright proprietors will correspond with the central authority in the vast majority of real-world issues.</p><p>Those concerned about censorship, on the other hand, may find the existence of any central authority with the authority to issue directives troublesome. </p><p>TLDs that are not owned by anyone can now exist thanks to the introduction of a decentralized DNS system.</p><p>A peer-to-peer system also serves as the querying system for a decentralized DNS.</p><p>Volunteers manage the customized DNS server software in a peer-to-peer system, and no central authority can meddle in the TLD’s functioning. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> project-overview </category>
+          
+          <category> decentralized-domain-name </category>
           
       </categories>
       
