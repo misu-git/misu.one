@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>ZK-Proof | Misu</title>
+  <meta name="author" content="Mihail Nica">
+  
+  <meta name="description" content="Verifying the validity of a secret without disclosing the secretHave you ever tried to prove to someone that you know a secret without really exposing the secret?">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="ZK-Proof"/>
+  <meta property="og:site_name" content="Misu"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KL2DTZNK2K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KL2DTZNK2K');
+    </script>
+    
+
+        
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "//hm.baidu.com/hm.js?cb5448498d7169c668b07c2b255d62c1";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Misu</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/socials" title="You can find me here.">
+			  <i class="fa fa-tags"></i>Socials
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> ZK-Proof</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="Verifying-the-validity-of-a-secret-without-disclosing-the-secret"><a href="#Verifying-the-validity-of-a-secret-without-disclosing-the-secret" class="headerlink" title="Verifying the validity of a secret without disclosing the secret"></a>Verifying the validity of a secret without disclosing the secret</h1><p>Have you ever tried to prove to someone that you know a secret without really exposing the secret?</p>
+<span id="more"></span>
+<p>It may appear tough to persuade people that you have precise expertise without revealing what that knowledge is.</p>
+<p>This is, however, the precise circumstance for many digital and online procedures in which the system must verify that particular information is valid or genuine without exposing it. </p>
+<p>This is, however, the perfect circumstance for many digital and online procedures in which the system must verify that particular information is genuine or truthful without exposing potentially sensitive stuff (such as personal data).</p>
+<p>This is where zero-knowledge proofs (ZKPs) come into play. </p>
+<p>A ZKP is a cryptographic protocol between a prover we may name Peggy and a Victor verifier, in which the former attempts to convince the latter of the truth without disclosing information other than the veracity of the assertion.</p>
+<h2 id="ZKP’s-idea-is-nicely-stated-in-the-post-How-to-explain-zero-knowledge-protocols-to-your-children"><a href="#ZKP’s-idea-is-nicely-stated-in-the-post-How-to-explain-zero-knowledge-protocols-to-your-children" class="headerlink" title="ZKP’s idea is nicely stated in the post How to explain zero-knowledge protocols to your children."></a>ZKP’s idea is nicely stated in the post <a href="%22http://pages.cs.wisc.edu/~mkowalcz/628.pdf%22">How to explain zero-knowledge protocols to your children.</a></h2><p>The narrative is about a magical cave where entry divides into two dark twisting passages: one on the left and one on the right.</p>
+<p>Deeper down the cave, apparently, both pathways migrate backwards, almost connecting to one another, but remain divided by a wall.</p>
+<p>Therefore, if you opt to go in one route, you have to go out of the cave and turn back. </p>
+<p>The cave still has a secret. The wall separating the tunnels opens and is connecting with a whispering of the magic words “open sesame.”</p>
+<p>Peggy says Victor understands the key words that the wall is opening, but he wants her to show that this is real.</p>
+<p>To achieve this, Victor presents himself with a challenge: at the entrance of the cave, he waits and asks Peggy to enter the cave by using the left route and to come out by using the right pass.</p>
+<p>It’s only conceivable if Péggy knows the magic words thus if she finishes the task successfully, Victor is persuaded that despite the fact that none of them tells the other magic words, Peggy knows the magical words. </p>
+<p>A zero-knowledge evidence must thus fulfill the following characteristics:</p>
+<ol>
+<li><p>Completeness: The prover can convince the verifier that the assertion is true if the statement is true.</p>
+</li>
+<li><p>Soundness: If the declaration is incorrect, the prover cannot persuade the proof that the declaration is true.</p>
+</li>
+<li><p>Zero-Knowledge: if the declaration is true, the verification does not learn any more than the declaration is true. </p>
+</li>
+</ol>
+<h3 id="How-are-zero-knowledge-proofs-utilized-in-online-voting"><a href="#How-are-zero-knowledge-proofs-utilized-in-online-voting" class="headerlink" title="How are zero-knowledge proofs utilized in online voting?"></a>How are zero-knowledge proofs utilized in online voting?</h3><p>Zero-knowledge is a significant factor when discussing about online voting systems regarding verifiability or vote correctness (to learn more about security requirements for online voting, check out <a href="/2020/11/08/online-voting/">this article</a>). </p>
+<h3 id="Rightness-of-vote"><a href="#Rightness-of-vote" class="headerlink" title="Rightness of vote"></a>Rightness of vote</h3><p>Let’s conceive of a referendum in which a list of questions is submitted to the voters and they must respond to each question whether or not.</p>
+<p>The vote system (a mobile phone, a laptop, etc.) recognizes the response yes as 1 and the reply negative as 0. To encrypt these responses,<br>In such a system, it is necessary to show that the encrypted value is actually one or one, so that the malicious voter cannot vote on a single issue more than once; e.g., encryption of the option by number 3.</p>
+<p>To achieve thus, the system produces a zero-knowledge proof that the encrypted value is a </p>
+<h3 id="Checking-Universal"><a href="#Checking-Universal" class="headerlink" title="Checking Universal"></a>Checking Universal</h3><p>A method of online voting should produce proof for the universal verificability that anybody has been able to verify that the results of the elections were computed from votes by qualified voters, and that those votes were not altered during the counting process.</p>
+<p>Usually, this verification is supplied through certificates. </p>
+<p>Regardless of the technique of anonymization employed throughout the counting process, votes should be decrypted, such as mixing or homomorphic counting.</p>
+<p>Decryption is a vulnerable procedure which requires to carry out a private key.</p>
+<p>To safeguard the privacy of each voter, this key must be secured.</p>
+<p>If we want to verify that the decryption process has been carried out correctly without any votes being modified, added or deleted, zero-knowledge proofs are generated to show that the decrypted votes are those which have been encrypted and that no information is being drawn from the private election key and the contents of every ballot. </p>
+<p>Zero-Knowledge proof is only one of several security procedures that can be used during elections online and helps in particular to provide verifiability and transparency while still safeguarding the privacy of voters and integrity overall in the elections. </p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a href="/2021/02/05/proof-of-burn/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2021/01/15/proof-of-stake/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+</section>
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2021-02-02 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/idea/">idea<span>9</span></a></li> <li><a href="/categories/idea/cryptography/">cryptography<span>4</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+    
+        &copy;
+        2021
+            Mihail Nica
+                
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>

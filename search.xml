@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Proof of Capacity Consensus</title>
+      <link href="/2021/04/06/proof-of-capacity/"/>
+      <url>/2021/04/06/proof-of-capacity/</url>
+      
+        <content type="html"><![CDATA[<h1 id="The-Proof-of-Capacity-PoC-concept"><a href="#The-Proof-of-Capacity-PoC-concept" class="headerlink" title="The Proof of Capacity (PoC) concept"></a>The Proof of Capacity (PoC) concept</h1><p>Proof of capacity (PoC) is a consensus mechanism method used in blockchains that allows mining devices in the network to decide mining rights and validate transactions using their available hard drive space.</p><span id="more"></span><p>This is in contrast to using the processing power of the mining device (as in the proof of work method) or the miner’s cryptocurrency stake (as in the proof of stake algorithm). </p><h1 id="What-is-Proof-of-Burn"><a href="#What-is-Proof-of-Burn" class="headerlink" title="What is Proof of Burn?"></a>What is Proof of Burn?</h1><p>Proof of capacity is one of many alternatives to the problems of high energy consumption in <a href="/2021/01/10/proof-of-work/">Proof of Work (PoW)</a> systems and tokens hoarding in <a href="/2021/01/15/proof-of-stake/">Proof of Stake (PoS)</a> systems. </p><p>Proof of capacity allows mining devices on the blockchain network, also known as nodes, to mine available cryptocurrencies using free space on their hard drives.</p><p>PoC works by storing a list of possible solutions on the mining device’s hard drive even before the mining activity begins, rather than repeatedly changing the numbers in the block header and hashing for the solution value as in a PoW system. </p><p>The more possible solution values a miner can store on his hard drive, the more chances he has to match the required hash value from his list, resulting in a higher chance of winning the mining reward.</p><p>To use an analogy, if lottery prizes are determined by matching the most numbers on the winning ticket, a player with a longer list of potential solutions will have a better chance of winning.</p><p>Furthermore, the player is allowed to use the lottery ticket block numbers over and over again. </p><h1 id="How-Plotting-and-Mining-works"><a href="#How-Plotting-and-Mining-works" class="headerlink" title="How Plotting and Mining works?"></a>How Plotting and Mining works?</h1><p>Plotting and mining are two steps in the proof-of-capacity protocol.</p><p>First, the hard drive is plotted: a list of all potential nonce values is constructed by hashing data, including a miner’s account, over and over again.</p><p>Each nonce is made up of 8192 hashes, numbered from 0 to 8191.</p><p>All of the hashes are coupled into “scoops,” which are groups of two neighboring hashes.</p><p>For example, hash 0 and 1 equals scoop 0, hash 2 and 3 equals hash 1, and so on. </p><p>The second phase is the actual mining, which entails calculating a scoop number by a miner.</p><p>For example, if a miner starts mining and generates scoop number 38, the miner would then go to nonce 1’s scoop number 38 and utilize the data from that scoop to calculate a deadline value.</p><p>For each nonce stored on the miner’s hard drive, the process is repeated to calculate the deadline.</p><p>The miner chooses the one with the shortest deadline after calculating all of the deadlines. </p><p>Before a miner is authorized to produce a new block, a deadline represents the amount of time in seconds that has passed since the last block was forged.</p><p>The miner can fabricate a block and claim the block reward if no one else has done so inside this time frame.</p><p>For example, if miner X sets a minimum deadline of 36 seconds and no other miners can forge the block within that time, X will be guaranteed the opportunity to forge the next block and be rewarded. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> idea </category>
+          
+          <category> consensus </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Proof of Assignment Consensus</title>
+      <link href="/2021/03/12/proof-of-assignment/"/>
+      <url>/2021/03/12/proof-of-assignment/</url>
+      
+        <content type="html"><![CDATA[<h1 id="The-Proof-of-Assignment-PoA-concept"><a href="#The-Proof-of-Assignment-PoA-concept" class="headerlink" title="The Proof of Assignment (PoA) concept"></a>The Proof of Assignment (PoA) concept</h1><p>Proof of Assignment (PoA)’s operating method enables basic, low-capacity mining operations to be performed using everyday Internet of Things (IoT) applications. </p><span id="more"></span><p>In comparison to its predecessors, Proof of Assignment (PoA) is a cryptographic consensus process that uses less power and can run on relatively low-end hardware.<br>Traditional consensus methods like as <a href="/2021/01/10/proof-of-work/">Proof of Work (PoW)</a> and <a href="/2021/01/15/proof-of-stake/">Proof of Stake (PoS)</a> appear to waste more energy and require significantly more computer power and memory to function, according to PoA. </p><h1 id="What-is-Proof-of-Assignment"><a href="#What-is-Proof-of-Assignment" class="headerlink" title="What is Proof of Assignment?"></a>What is Proof of Assignment?</h1><p>A consensus mechanism is a fault-tolerant technique used in distributed computer networks and blockchain applications to obtain the required agreement on a single data value or network state among decentralized processes or multi-agent systems, such as cryptocurrency.</p><p>It’s also handy for keeping track of and coordinating a group of distributed connected devices, such as with the Internet of Things. </p><p>Major household appliances, such as vacuum cleaners, washing machines, and refrigerators, as well as other commonly used consumer electronics, such as smartwatches and printers, now include advanced microprocessors, microcontrollers, and memory modules capable of connecting to the internet and each other—the IoT’s basic concept.</p><p>It enables these devices to capture, process, and exchange data with other systems and networks in real time. </p><p>IoT-compatible gadgets with integrated computing capacity can be used for bitcoin mining.</p><p>Mining is a computer-based mathematical activity that allows new crypto currencies to be created and blockchain transactions to be verified.</p><p>However, because these devices’ memory and processing power are restricted, their contribution to mining is minimal.</p><p>This type of “lightweight” mining is made possible by the PoA algorithm’s functioning mechanism. </p><h1 id="Benefits"><a href="#Benefits" class="headerlink" title="Benefits"></a>Benefits</h1><p>PoA is said to have a bunch of new advantages.<br>To begin with, household gadgets can be used to contribute to mining, providing a viable answer to the scalability and transaction processing delays that today’s popular cryptocurrency networks suffer.</p><p>Additionally, device owners can set a timetable for when their gadgets contribute to mining when they are idle.</p><p>They may also willingly share or sell the data created and processed by their gadgets in order to earn crypto coins, as this data can be helpful to a wide range of entities involved in market research, consumer patterns research, and city planning. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> idea </category>
+          
+          <category> consensus </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mimblewimble</title>
+      <link href="/2021/03/10/mimblewimble/"/>
+      <url>/2021/03/10/mimblewimble/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mimblewimble-is-a-confidential-transactions-blockchain-protocol"><a href="#Mimblewimble-is-a-confidential-transactions-blockchain-protocol" class="headerlink" title="Mimblewimble is a confidential transactions blockchain protocol."></a>Mimblewimble is a confidential transactions blockchain protocol.</h1><p>It allows for a considerably simpler blockchain in which all spent transactions can be cut off.</p><span id="more"></span><p>Essentially, an Elliptic Curve Digital Signature Algorithm (ECDSA) can be considered public key and the differential between outputs, inputs and transaction fees for a valid confidential transaction has to be 0.</p><p>A prover who builds a confidential transaction can thus sign the transaction with the public key difference between the outputs and inputs.</p><p>This allows that new nodes can validate the whole blockchain efficiently without having to download any previous and used transactions. </p><p>The blockchain consists only of blockheaders, remaining UTXO outputs and a non-removable kernel of transactions. </p><p>The blockchain is composed of blockheaders.</p><p>Mimblewimble also allows the aggregation of transactions before the blockchain is committed. </p><p>Although there are strong guarantees of confidence, even in Mimblewimble, all commitments which are unique can still be registered for each transaction received and traced, which entries are transformed into which outputs and therefore the transaction graph efficiently reconstructed.</p><p>This can be done easily by adding a network node for monitoring all transactions through the network.</p><p>This does not, of course, constitute a significant infringement of privacy since although UTXO has been declared anonymous, the entire history of this user does not become declared anonymous (unlike in Bitcoin). </p><h1 id="Mimblewimble-basics"><a href="#Mimblewimble-basics" class="headerlink" title="Mimblewimble basics"></a>Mimblewimble basics</h1><ol><li><p>No addresses available.</p></li><li><p>No amounts are available.</p></li><li><p>2 transactions can be merged into one block, one spending another in one block, and all intermediary details deleted. </p></li></ol><p>How are we doing that?</p><p>A encryption sounds great, but what it means is, “I’m proving I knew before I made it public because I can’t reverse the hash to reveal myself.”</p><p>In addition, commitments (for example) are made to demonstrate public forecasts even beyond cryptocurrencies, such as John Galt’s public forecast of the development of projects in 2018 on 1 January.</p><p>In 2019, John can reveal his list and people can easily check to see if his list (in plain text in English) corresponds to the previous year.<br><img src="/content/mimblewimble.png" alt="mimblewimble-diagram"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> idea </category>
+          
+          <category> cryptography </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Bulletproofs</title>
+      <link href="/2021/02/18/bulletproofs/"/>
+      <url>/2021/02/18/bulletproofs/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Bulletproofs-are-among-the-distinct-Zero-knowledge-Proof-systems"><a href="#Bulletproofs-are-among-the-distinct-Zero-knowledge-Proof-systems" class="headerlink" title="Bulletproofs are among the distinct Zero-knowledge Proof systems"></a>Bulletproofs are among the distinct Zero-knowledge Proof systems</h1><p>Like the  Zero-Knowledge Succinct Non-Interactive ARguments of Knowledge (zk-SNARK), the  Zero Knowledge Prover and Verifier for Boolean Circuits (ZKBoo) and the  Succinct Transparent ARgument of Knowledge (STARK). </p><span id="more"></span><p>Zero-knowledge proofs are designed to allow a prover to indirectly ensure that a statement is true without any information after the statement has been verified.</p><p>In order to demonstrate that a number is found to be used to resolve a cryptographic puzzle and that the hash value is adjusted without the disclosure of the hash value. </p><h3 id="The-Bulletproofs-Technology-is-a-non-interactive-zero-knowledge-NIZK-protocol-with-very-short-proofs-for-general-arithmetic-circuitry-Arguments-of-Knowledge-Systems"><a href="#The-Bulletproofs-Technology-is-a-non-interactive-zero-knowledge-NIZK-protocol-with-very-short-proofs-for-general-arithmetic-circuitry-Arguments-of-Knowledge-Systems" class="headerlink" title="The Bulletproofs Technology is a non-interactive zero-knowledge (NIZK) protocol with very short proofs for general arithmetic circuitry (Arguments of Knowledge Systems)."></a>The Bulletproofs Technology is a non-interactive zero-knowledge (NIZK) protocol with very short proofs for general arithmetic circuitry (Arguments of Knowledge Systems).</h3><p>They rely on the assumption of Discrete Logarithm (DL) and are interactive with the Fiat-Shamir Heuristic.</p><p>The name “Bulletproof” came from a nontechnical summary by one of the original authors of the scheme: “Short like the bullet with security assumptions that prove to be ballots.” </p><h3 id="Bulletproofs-is-essentially-its-algorithm-for-internal-products-originally-presented-by-Groth-and-further-refined-by-Bootle-et-la"><a href="#Bulletproofs-is-essentially-its-algorithm-for-internal-products-originally-presented-by-Groth-and-further-refined-by-Bootle-et-la" class="headerlink" title="Bulletproofs is essentially its algorithm for internal products, originally presented by Groth and further refined by Bootle et la."></a>Bulletproofs is essentially its algorithm for internal products, originally presented by Groth and further refined by Bootle et la.</h3><p>Later development provided evidence (knowledge argument) for two independent (not related) binding vector Pedersen Commitments, which met the relationship between the product and product.</p><p>Bulletproofs build upon these techniques, which provide no-knowledge, communication effective evidence, but replace the internal product argument with an additional one, reducing communication overall by three. </p><p>Bulletproofs are also deployed in a Multi-Party Computing (MPC) protocol that aggregates distributed evidence of several provers with secret committed values into a single proof before the challenge of Fiat Shamir is determined and transmitted to the verifier and minimizes communication rounds.</p><p>Secret values committed will remain secret. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> idea </category>
+          
+          <category> cryptography </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Proof of Burn Consensus</title>
+      <link href="/2021/02/05/proof-of-burn/"/>
+      <url>/2021/02/05/proof-of-burn/</url>
+      
+        <content type="html"><![CDATA[<h1 id="The-Proof-of-Burn-PoB-concept"><a href="#The-Proof-of-Burn-PoB-concept" class="headerlink" title="The Proof of Burn (PoB) concept"></a>The Proof of Burn (PoB) concept</h1><p>Proof of burn is one of the various consensus mechanism methods used by a blockchain network to ensure that all participating nodes agree on the blockchain network’s real and valid state.</p><p>This algorithm is in place to prevent any cryptocurrency coin from being double-spent. </p><p>Proof of burn is based on the idea of miners “burning” the coins that provide them mining rights. </p><span id="more"></span><p>The blockchain is a cryptocurrency’s core database.</p><p>It stores all transaction-related information in blocks, which serve as the blockchain’s data storage units.</p><p>Only when all of the blockchain nodes agree on a set of transactions that they consider valid, a block is recorded. </p><p>Because of the blockchain network’s independent and decentralized character, an automated system is essential to ensure that all participating nodes agree on only acceptable transactions.</p><p>Consensus-mechanism algorithms handle this critical duty. </p><h1 id="What-is-Proof-of-Burn"><a href="#What-is-Proof-of-Burn" class="headerlink" title="What is Proof of Burn?"></a>What is Proof of Burn?</h1><p>Proof of burn (POB) is an alternative consensus algorithm that tries to address the high energy consumption issue of a POW system.</p><p>POB is often called a POW system without energy waste. It operates on the principle of allowing miners to “burn” virtual currency tokens. They are then granted the right to write blocks in proportion to the coins burnt. </p><p>Iain Stewart, the creator of the POB algorithm, compares burned coins to mining rigs to describe the method.</p><p>In this example, a miner uses his or her money to purchase a virtual mining setup that allows them to mine blocks.</p><p>The miner’s virtual mining “rig” will grow in size as more coins are burned. </p><p>The POB algorithm’s creator, Iain Stewart, compares burned coins to mining rigs to describe the algorithm.</p><p>A miner burns his coins to buy a virtual mining setup that allows them to mine blocks in this analogy.</p><p>The miner’s virtual mining “rig” will grow in size as the miner burns more money. </p><p>You can use the network to send transactions that will burn your own cryptocurrency tokens.</p><p>Other participants can mine/burn on top of your block, and you can add other participants’ transactions to your block as well.</p><p>Essentially, all of this coin-burning activity maintains the network nimble, and players are rewarded for their efforts (both their own and others’ coins). </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> idea </category>
+          
+          <category> consensus </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ZK-Proof</title>
+      <link href="/2021/02/02/zk-proof/"/>
+      <url>/2021/02/02/zk-proof/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Verifying-the-validity-of-a-secret-without-disclosing-the-secret"><a href="#Verifying-the-validity-of-a-secret-without-disclosing-the-secret" class="headerlink" title="Verifying the validity of a secret without disclosing the secret"></a>Verifying the validity of a secret without disclosing the secret</h1><p>Have you ever tried to prove to someone that you know a secret without really exposing the secret?</p><span id="more"></span><p>It may appear tough to persuade people that you have precise expertise without revealing what that knowledge is.</p><p>This is, however, the precise circumstance for many digital and online procedures in which the system must verify that particular information is valid or genuine without exposing it. </p><p>This is, however, the perfect circumstance for many digital and online procedures in which the system must verify that particular information is genuine or truthful without exposing potentially sensitive stuff (such as personal data).</p><p>This is where zero-knowledge proofs (ZKPs) come into play. </p><p>A ZKP is a cryptographic protocol between a prover we may name Peggy and a Victor verifier, in which the former attempts to convince the latter of the truth without disclosing information other than the veracity of the assertion.</p><h2 id="ZKP’s-idea-is-nicely-stated-in-the-post-How-to-explain-zero-knowledge-protocols-to-your-children"><a href="#ZKP’s-idea-is-nicely-stated-in-the-post-How-to-explain-zero-knowledge-protocols-to-your-children" class="headerlink" title="ZKP’s idea is nicely stated in the post How to explain zero-knowledge protocols to your children."></a>ZKP’s idea is nicely stated in the post <a href="%22http://pages.cs.wisc.edu/~mkowalcz/628.pdf%22">How to explain zero-knowledge protocols to your children.</a></h2><p>The narrative is about a magical cave where entry divides into two dark twisting passages: one on the left and one on the right.</p><p>Deeper down the cave, apparently, both pathways migrate backwards, almost connecting to one another, but remain divided by a wall.</p><p>Therefore, if you opt to go in one route, you have to go out of the cave and turn back. </p><p>The cave still has a secret. The wall separating the tunnels opens and is connecting with a whispering of the magic words “open sesame.”</p><p>Peggy says Victor understands the key words that the wall is opening, but he wants her to show that this is real.</p><p>To achieve this, Victor presents himself with a challenge: at the entrance of the cave, he waits and asks Peggy to enter the cave by using the left route and to come out by using the right pass.</p><p>It’s only conceivable if Péggy knows the magic words thus if she finishes the task successfully, Victor is persuaded that despite the fact that none of them tells the other magic words, Peggy knows the magical words. </p><p>A zero-knowledge evidence must thus fulfill the following characteristics:</p><ol><li><p>Completeness: The prover can convince the verifier that the assertion is true if the statement is true.</p></li><li><p>Soundness: If the declaration is incorrect, the prover cannot persuade the proof that the declaration is true.</p></li><li><p>Zero-Knowledge: if the declaration is true, the verification does not learn any more than the declaration is true. </p></li></ol><h3 id="How-are-zero-knowledge-proofs-utilized-in-online-voting"><a href="#How-are-zero-knowledge-proofs-utilized-in-online-voting" class="headerlink" title="How are zero-knowledge proofs utilized in online voting?"></a>How are zero-knowledge proofs utilized in online voting?</h3><p>Zero-knowledge is a significant factor when discussing about online voting systems regarding verifiability or vote correctness (to learn more about security requirements for online voting, check out <a href="/2020/11/08/online-voting/">this article</a>). </p><h3 id="Rightness-of-vote"><a href="#Rightness-of-vote" class="headerlink" title="Rightness of vote"></a>Rightness of vote</h3><p>Let’s conceive of a referendum in which a list of questions is submitted to the voters and they must respond to each question whether or not.</p><p>The vote system (a mobile phone, a laptop, etc.) recognizes the response yes as 1 and the reply negative as 0. To encrypt these responses,<br>In such a system, it is necessary to show that the encrypted value is actually one or one, so that the malicious voter cannot vote on a single issue more than once; e.g., encryption of the option by number 3.</p><p>To achieve thus, the system produces a zero-knowledge proof that the encrypted value is a </p><h3 id="Checking-Universal"><a href="#Checking-Universal" class="headerlink" title="Checking Universal"></a>Checking Universal</h3><p>A method of online voting should produce proof for the universal verificability that anybody has been able to verify that the results of the elections were computed from votes by qualified voters, and that those votes were not altered during the counting process.</p><p>Usually, this verification is supplied through certificates. </p><p>Regardless of the technique of anonymization employed throughout the counting process, votes should be decrypted, such as mixing or homomorphic counting.</p><p>Decryption is a vulnerable procedure which requires to carry out a private key.</p><p>To safeguard the privacy of each voter, this key must be secured.</p><p>If we want to verify that the decryption process has been carried out correctly without any votes being modified, added or deleted, zero-knowledge proofs are generated to show that the decrypted votes are those which have been encrypted and that no information is being drawn from the private election key and the contents of every ballot. </p><p>Zero-Knowledge proof is only one of several security procedures that can be used during elections online and helps in particular to provide verifiability and transparency while still safeguarding the privacy of voters and integrity overall in the elections. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> idea </category>
+          
+          <category> cryptography </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Proof of Stake Consensus</title>
+      <link href="/2021/01/15/proof-of-stake/"/>
+      <url>/2021/01/15/proof-of-stake/</url>
+      
+        <content type="html"><![CDATA[<h1 id="The-Proof-of-Stake-PoS-concept"><a href="#The-Proof-of-Stake-PoS-concept" class="headerlink" title="The Proof of Stake (PoS) concept"></a>The Proof of Stake (PoS) concept</h1><p>According to the Proof of Stake (PoS) idea, a person’s ability to mine or validate block transactions is proportional to the number of coins they own.<br>This means that the more coins a miner owns, the greater their mining power. </p><span id="more"></span><p>The proof of stake concept was developed as an alternative to the <a href="/2021/01/10/proof-of-work/">“proof of work (PoW)”</a> concept, in order to address the latter’s fundamental flaws.</p><p>The proof of stake idea is currently exclusively used by altcoins.</p><p>When a transaction is started, the data is put into a block, which is subsequently duplicated among several computers or network nodes.</p><p>The nodes are the blockchain’s administrative body, and they verify the authenticity of each block’s transactions. </p><p>In 2015, one Bitcoin transaction was predicted to consume enough electricity to power 1.57 American households for one day.</p><p>That figure has only risen since then.</p><h1 id="Proof-of-Stake’s-Impact-on-Mining"><a href="#Proof-of-Stake’s-Impact-on-Mining" class="headerlink" title="Proof of Stake’s Impact on Mining"></a>Proof of Stake’s Impact on Mining</h1><p>Bitcoin consumes around 119.87 terawatt-hours every year, according to the University of Cambridge’s Bitcoin Electricity Consumption Index, which is more than the United Arab Emirates and the Netherlands utilize annually.</p><p>Miners typically sell their awarded coins for fiat money to cover their electricity bills, causing the cryptocurrency’s price to fall. </p><p>Proof of stake (PoS) attempts to overcome this problem by tying mining power to the number of coins a miner owns.</p><p>Instead of wasting energy solving PoW problems, a PoS miner is constrained to mining a percentage of transactions according to their ownership share.</p><p>A miner who owns 3% of the coins available, for example, can theoretically only mine 3% of the blocks. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> idea </category>
+          
+          <category> consensus </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Proof of Work Consensus</title>
+      <link href="/2021/01/10/proof-of-work/"/>
+      <url>/2021/01/10/proof-of-work/</url>
+      
+        <content type="html"><![CDATA[<h1 id="The-Proof-of-Work-PoW-Concept"><a href="#The-Proof-of-Work-PoW-Concept" class="headerlink" title="The Proof of Work (PoW) Concept"></a>The Proof of Work (PoW) Concept</h1><p>Proof of work (PoW) refers to a system that necessitates a considerable but manageable amount of effort in order to discourage frivolous or malicious uses of computing power, such as sending spam emails or launching denial-of-service attacks.</p><span id="more"></span><p>Hal Finney applied the notion to protecting digital money in 2004 using the SHA-256 hashing technique and the concept of “reusable proof of work.” </p><p>Bitcoin was the first widely used application of Finney’s PoW concept after its release in 2009. (Finney was also the recipient of the first bitcoin transaction).</p><p>Many other cryptocurrencies are based on proof of work, which allows for secure, decentralized consensus. </p><p>This discussion will concentrate on how proof of work works in the bitcoin network.<br>Bitcoin is a digital money that is supported by a “blockchain,” which is a type of distributed ledger.</p><p>This ledger keeps track of all bitcoin transactions and organizes them into “blocks” so that no user may spend the same amount of bitcoin twice.</p><p>The ledger is public, or “distributed,” to avoid manipulation; an altered version would be rapidly rejected by other users. </p><p>In practice, users identify tampering using hashes, which are long strings of numbers that act as proof of work.</p><p>When you run a set of data through a hash function (SHA-256 is used in Bitcoin), it will only ever produce one hash.</p><p>However, due to the “avalanche effect,” even little changes to any part of the original data will result in a hash that is completely unrecognizable.</p><p>The hash created by a given function will be the same length regardless of the size of the underlying data set.</p><p>The hash function is a one-way function: it can only be used to verify that the data that created the hash matches the original data. </p><p>For a modern computer, generating any hash for a set of bitcoin transactions would be cheap, thus the bitcoin network sets a particular level of “difficulty” to transform the process into “work.”</p><p>This option is changed such that a new block is “mined” – that is, added to the blockchain by creating a valid hash – every 10 minutes or so.</p><p>The complexity of a hash is determined by its “target”: the lower the target, the narrower the set of valid hashes and the more difficult it is to construct one.</p><p>In practice, this means a hash with a long string of zeros at the beginning. </p><h1 id="More-you-know"><a href="#More-you-know" class="headerlink" title="More you know"></a>More you know</h1><p>Proof of work was first offered as a response to the rising problem of spam email. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> idea </category>
+          
+          <category> consensus </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Online voting security</title>
+      <link href="/2021/01/08/online-voting/"/>
+      <url>/2021/01/08/online-voting/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Online-voting-safety-technique"><a href="#Online-voting-safety-technique" class="headerlink" title="Online voting safety technique"></a>Online voting safety technique</h1><p>Ways to improve and strengthen online voting security </p><span id="more"></span><p>In order to achieve the same or greater security as traditional paper voting, online voting must fulfill a number of conditions.</p><p>The four major categories may arrange these requirements: authentication, integrity, privacy and verification. </p><h3 id="Authentification"><a href="#Authentification" class="headerlink" title="Authentification"></a>Authentification</h3><p>Authentication needs voters to be recognized in such a way as to differentiate them unambiguously from others.</p><p>Authentication may be achieved through many techniques, such as: the secure delivery of pairs of name and password for voters, pre-existing citizen credentials, such as those that are used in government online portals, or electronic ID cards, such as National IDs. </p><p>Such techniques can also be coupled with other authentication elements such as secondary device (for example, SMS code provided to the mobile device) or biometric authentication (fingerprints or face scans).</p><p>The e-voting system may check the eligibility of the voter by means of various authentication techniques and will provide access only for persons who have the right to vote. </p><h3 id="Integrity"><a href="#Integrity" class="headerlink" title="Integrity"></a>Integrity</h3><p>Integrity indicates that voting method or any improper influence shall not impact the intention of an elector.</p><p>Integrity is guaranteed at several levels and at different times throughout the election in the online voting method.</p><p>Each ballot is first signed digitally with a key that is unique to every voter throughout the voting time, guaranteeing that the vote is not modified by any other voters but themselves. </p><p>Later on, when the voting is encrypted and anonymized, digital signatures are employed to safeguard intermediate data that is transferred during the screening process and mathematical evidence is also utilized to guarantee the integrity of processes themselves, depending on the kind of election.</p><p>Sensitive and manipulative information, such as configuration of election files, is also digitally signed to avoid tampering. </p><h3 id="Privacy"><a href="#Privacy" class="headerlink" title="Privacy"></a>Privacy</h3><p>Privacy involves keeping secret every vote and preserving the anonymity of voters.<br>At each point of the voting process, the electronic voting system must ensure that the secrecy of the vote is preserved, that the vote is secret and its content is not exposed.</p><p>This is done by encrypting the votes right before transmission on the voters’ device so that contents cannot be read until anonymous ballot is decrypted by the electoral board at the end of the election.</p><p>Every connection between an unsealed vote and the elector who casts it is based upon the anonymity of voters. </p><p>In this respect, methods like mixing, which corresponds to the mixing or homomorphic tallying of votes without decrypting outcomes, are utilized. </p><h3 id="Verification"><a href="#Verification" class="headerlink" title="Verification"></a>Verification</h3><p>Verification is an asset that provides for accuracy checking in a number of the operations of the online voting system.</p><p>There are typically 3 forms of verification: cast-as-means, cast-as-cast and counted-as-written.</p><p>The first two are procedures for individual verification, since they relate to each elector and to the votes that they cast.</p><p>The latter is known as universal verification since anybody having the system data may check it. </p><p>Although many of these safety functions are truly complicated and advanced, it does not mean that an online voting system may be used.</p><p>Where practicable, each qualified provider should implement and automatically implement these steps to streamline the entire process, both for electoral organisers and voters.</p><p>They should also provide the support essential for the smooth and reliable conduct of the elections.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> idea </category>
+          
+          <category> cryptography </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

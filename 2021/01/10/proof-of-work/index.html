@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>Proof of Work Consensus | Misu</title>
+  <meta name="author" content="Mihail Nica">
+  
+  <meta name="description" content="The Proof of Work (PoW) ConceptProof of work (PoW) refers to a system that necessitates a considerable but manageable amount of effort in order to discourage frivolous or malicious uses of computing power, such as sending spam emails or launching denial-of-service attacks.">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Proof of Work Consensus"/>
+  <meta property="og:site_name" content="Misu"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KL2DTZNK2K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KL2DTZNK2K');
+    </script>
+    
+
+        
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "//hm.baidu.com/hm.js?cb5448498d7169c668b07c2b255d62c1";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Misu</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/socials" title="You can find me here.">
+			  <i class="fa fa-tags"></i>Socials
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> Proof of Work Consensus</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="The-Proof-of-Work-PoW-Concept"><a href="#The-Proof-of-Work-PoW-Concept" class="headerlink" title="The Proof of Work (PoW) Concept"></a>The Proof of Work (PoW) Concept</h1><p>Proof of work (PoW) refers to a system that necessitates a considerable but manageable amount of effort in order to discourage frivolous or malicious uses of computing power, such as sending spam emails or launching denial-of-service attacks.</p>
+<span id="more"></span>
+
+<p>Hal Finney applied the notion to protecting digital money in 2004 using the SHA-256 hashing technique and the concept of “reusable proof of work.” </p>
+<p>Bitcoin was the first widely used application of Finney’s PoW concept after its release in 2009. (Finney was also the recipient of the first bitcoin transaction).</p>
+<p>Many other cryptocurrencies are based on proof of work, which allows for secure, decentralized consensus. </p>
+<p>This discussion will concentrate on how proof of work works in the bitcoin network.<br>Bitcoin is a digital money that is supported by a “blockchain,” which is a type of distributed ledger.</p>
+<p>This ledger keeps track of all bitcoin transactions and organizes them into “blocks” so that no user may spend the same amount of bitcoin twice.</p>
+<p>The ledger is public, or “distributed,” to avoid manipulation; an altered version would be rapidly rejected by other users. </p>
+<p>In practice, users identify tampering using hashes, which are long strings of numbers that act as proof of work.</p>
+<p>When you run a set of data through a hash function (SHA-256 is used in Bitcoin), it will only ever produce one hash.</p>
+<p>However, due to the “avalanche effect,” even little changes to any part of the original data will result in a hash that is completely unrecognizable.</p>
+<p>The hash created by a given function will be the same length regardless of the size of the underlying data set.</p>
+<p>The hash function is a one-way function: it can only be used to verify that the data that created the hash matches the original data. </p>
+<p>For a modern computer, generating any hash for a set of bitcoin transactions would be cheap, thus the bitcoin network sets a particular level of “difficulty” to transform the process into “work.”</p>
+<p>This option is changed such that a new block is “mined” – that is, added to the blockchain by creating a valid hash – every 10 minutes or so.</p>
+<p>The complexity of a hash is determined by its “target”: the lower the target, the narrower the set of valid hashes and the more difficult it is to construct one.</p>
+<p>In practice, this means a hash with a long string of zeros at the beginning. </p>
+<h1 id="More-you-know"><a href="#More-you-know" class="headerlink" title="More you know"></a>More you know</h1><p>Proof of work was first offered as a response to the rising problem of spam email. </p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a href="/2021/01/15/proof-of-stake/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2021/01/08/online-voting/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+</section>
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2021-01-10 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/idea/">idea<span>9</span></a></li> <li><a href="/categories/idea/consensus/">consensus<span>5</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+    
+        &copy;
+        2021
+            Mihail Nica
+                
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>
